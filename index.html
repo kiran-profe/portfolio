@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kiran Kumar C S – Python Developer Portfolio</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+
+body{margin:0}
+a{color:inherit}
+.pg{background:#0B0C0F;color:#F3F4F6;font-family:'Inter',system-ui,sans-serif;line-height:1.6;overflow:hidden}
+.wrap{max-width:1160px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.hd{font-family:'Inter Tight','Inter',sans-serif;font-weight:800;letter-spacing:-0.04em;line-height:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13px;font-weight:600;color:#E7E4DA;border:1px solid #2E2E33;border-radius:999px;padding:5px 13px;transition:background 0.2s ease,color 0.2s ease,border-color 0.2s ease}
+.chip:hover{background:#FFD43B;color:#0B0C0F;border-color:#FFD43B}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#FFD43B;display:flex;align-items:center;gap:10px}
+.eyebrow:before{content:"";width:28px;height:2px;background:#FFD43B;display:inline-block}
+.h2{font-family:'Inter Tight','Inter',sans-serif;font-weight:800;font-size:64px;letter-spacing:-0.045em;line-height:0.98;margin:18px 0 0}
+.nav a{color:#3A4150;text-decoration:none;font-size:15px;font-weight:500;min-height:44px;display:inline-flex;align-items:center;transition:color 0.2s ease}
+.nav a:hover{color:#FFFFFF}
+.btn{background:#F2B705;color:#FFFFFF;text-decoration:none;font-weight:700;padding:15px 28px;border-radius:999px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center;font-size:15px;transition:transform 0.2s ease,box-shadow 0.2s ease,background 0.2s ease}
+.btn:hover{background:#FFE27A;transform:translateY(-3px);box-shadow:0 14px 28px rgba(59,108,255,0.35)}
+.btn2{color:#F3F4F6;text-decoration:none;font-weight:700;padding:13px 26px;border:1.5px solid #3A3A40;border-radius:999px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center;font-size:15px;transition:border-color 0.2s ease,transform 0.2s ease}
+.btn2:hover{border-color:#FFD43B;transform:translateY(-3px)}
+.gh{display:inline-flex;align-items:center;gap:10px}
+.hgrid{display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding-top:40px;padding-bottom:96px}
+.h1{font-size:84px;margin:22px 0 26px}
+.y{color:#FFD43B}
+.avail{display:inline-flex;align-items:center;gap:10px;background:#141416;border:1px solid #2E2E33;border-radius:999px;padding:8px 16px;font-size:14px;font-weight:500;color:#E7E4DA}
+.dot{width:9px;height:9px;border-radius:50%;background:#34D399;animation:pulse 1.6s ease-in-out infinite}
+.pw{position:relative;flex:0 0 auto;max-width:100%;padding:0 30px 30px 0}
+.ph{position:relative;width:420px;height:520px;max-width:100%;border-radius:36px;background:#F2B705;overflow:hidden;background-image:linear-gradient(rgba(255,255,255,0.12) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.12) 1px,transparent 1px);background-size:44px 44px}
+.ph img{position:absolute;bottom:0;left:0;width:100%;height:auto;display:block}
+.sun{position:absolute;right:-36px;top:-36px;width:150px;height:150px;border-radius:50%;background:#FFD43B}
+.fcard{position:absolute;background:#141416;border:1px solid #2E2E33;border-radius:14px;box-shadow:0 24px 44px rgba(0,0,0,0.45)}
+.code{left:-50px;bottom:60px;padding:16px 18px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;line-height:1.7;color:#D4D4D8;animation:bob 6s ease-in-out infinite}
+.kw{color:#FFD43B}.fn{color:#FFD43B}.cm{color:#7A7A80}
+.pill{right:-18px;top:84px;padding:12px 16px;font-size:13px;font-weight:700;display:flex;align-items:center;gap:10px;animation:bob 7s ease-in-out infinite 1s}
+.band{border-top:1px solid #232326;border-bottom:1px solid #232326;overflow:hidden}
+.track{display:flex;align-items:center;width:max-content;animation:marq 38s linear infinite;padding:22px 0}
+.track span{font-family:'Inter Tight',sans-serif;font-weight:800;font-size:30px;letter-spacing:-0.03em;color:#3A4150;white-space:nowrap;margin:0 28px}
+.track i{font-style:normal;color:#F2B705;font-size:30px}
+.band:hover .track{animation-play-state:paused}
+.sec{padding:110px 0}
+.show{display:flex;flex-wrap:wrap;gap:40px 72px;align-items:center;padding:64px 0;border-top:1px solid #232326}
+.show.rev{flex-direction:row-reverse}
+.sv{flex:1 1 560px;min-width:0;border-radius:32px;padding:44px;box-sizing:border-box;transition:transform 0.4s ease}
+.sin{filter:drop-shadow(0 28px 36px rgba(0,0,0,0.3));transition:transform 0.4s ease}
+.show:hover .sin{transform:translateY(-8px) scale(1.02)}
+.si{flex:1 1 360px;min-width:0}
+.num{font-family:'Inter Tight',sans-serif;font-weight:800;font-size:22px;color:#FFD43B;margin-bottom:14px}
+.st{font-size:52px;margin:0 0 12px}
+.role{font-size:14px;font-weight:600;color:#FFD43B;margin-bottom:18px}
+.sd{font-size:18px;color:#5A6070;margin:0 0 24px;max-width:480px}
+.row{display:flex;flex-wrap:wrap;gap:20px}
+.svc{flex:1 1 280px;min-width:0;background:#121214;border:1px solid #232326;border-radius:24px;padding:32px;box-sizing:border-box;transition:transform 0.3s ease,background 0.3s ease,border-color 0.3s ease}
+.svc:hover{transform:translateY(-8px);background:#F2B705;border-color:#F2B705}
+.svc:hover p{color:#1B1B1F !important}
+.svi{width:56px;height:56px;border-radius:16px;background:#1C1C20;color:#FFD43B;display:flex;align-items:center;justify-content:center;margin-bottom:22px;transition:background 0.3s ease,color 0.3s ease}
+.svc:hover .svi{background:#FFFFFF;color:#F2B705}
+.stats{display:flex;flex-wrap:wrap;gap:0}
+.stt{flex:1 1 220px;padding:28px 0;border-top:1px solid #232326}
+.stt b{font-family:'Inter Tight',sans-serif;font-weight:800;font-size:76px;letter-spacing:-0.05em;line-height:1;display:block;color:#FFFFFF}
+.stt span{color:#5A6070;font-size:15px}
+.cta{background:#F2B705;border-radius:40px;padding:80px 56px;position:relative;overflow:hidden}
+.cta:before{content:"";position:absolute;right:-80px;top:-80px;width:300px;height:300px;border-radius:50%;background:#FFD43B}
+.mail{font-family:'Inter Tight',sans-serif;font-weight:800;font-size:44px;letter-spacing:-0.04em;color:#FFFFFF;text-decoration:none;border-bottom:4px solid #FFD43B;line-height:1.15;display:inline-block;transition:color 0.2s ease}
+.mail:hover{color:#FFD43B}
+@keyframes rise{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:translateY(50px) scale(0.97)}to{opacity:1;transform:none}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+@keyframes slide{0%,100%{transform:translateX(0)}50%{transform:translateX(10px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.a1{animation:rise 0.8s 0.05s both}.a2{animation:rise 0.8s 0.2s both}.a3{animation:rise 0.8s 0.35s both}.a4{animation:rise 0.8s 0.5s both}
+.pfw{animation:pop 1s 0.3s cubic-bezier(0.2,0.8,0.2,1) both}
+.pul{animation:pulse 2.6s ease-in-out infinite}
+.sl{animation:slide 3.2s ease-in-out infinite}
+.rot{transform-box:fill-box;transform-origin:center;animation:spin 14s linear infinite}
+@supports (animation-timeline: view()){.rv{animation:rise linear backwards;animation-timeline:view();animation-range:entry 0% entry 40%}}
+@media (max-width:900px){.h1{font-size:50px}.h2{font-size:42px}.st{font-size:38px}.sv{padding:20px}.code,.pill{display:none}.mail{font-size:24px}.cta{padding:44px 26px}.stt b{font-size:54px}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+
+
+@keyframes drift{from{transform:translateX(-3%)}to{transform:translateX(3%)}}
+
+.hh{position:relative;background-color:#0B0B0D;color:#FFFFFF;overflow:hidden;background-image:radial-gradient(ellipse at 76% 52%,rgba(255,255,255,0.09),transparent 55%),linear-gradient(rgba(255,255,255,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.05) 1px,transparent 1px);background-size:100% 100%,25% 33.34%,25% 33.34%}
+.hhghost{position:absolute;left:0;right:0;top:110px;text-align:center;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:clamp(150px,27vw,340px);letter-spacing:-0.06em;line-height:1;color:rgba(255,255,255,0.045);white-space:nowrap;animation:drift 16s ease-in-out infinite alternate}
+.pm{position:absolute;color:rgba(255,255,255,0.32);font-size:18px;line-height:1;transform:translate(-50%,-50%);font-weight:300}
+.hhstage{position:relative;max-width:1160px;margin:0 auto;height:760px;padding:0 32px;box-sizing:border-box}
+.hhnav{position:absolute;left:32px;right:32px;top:18px;display:flex;align-items:center;justify-content:space-between;z-index:5;flex-wrap:wrap;gap:12px}
+.hhlinks{display:flex;gap:30px}
+.hhlinks a,.hhic{color:#FFFFFF;text-decoration:none;font-size:15px;font-weight:600;min-height:44px;display:inline-flex;align-items:center;transition:color 0.2s ease}
+.hhlinks a:hover,.hhic:hover{color:#FFD43B}
+.hhbtn{background:#FFD43B;color:#0B0C0F;text-decoration:none;font-weight:700;padding:10px 22px;border-radius:999px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center;font-size:15px;transition:transform 0.2s ease}
+.hhbtn:hover{transform:translateY(-2px)}
+.hhfr{position:absolute;right:48px;top:168px;width:372px;z-index:3}
+.hhph{position:relative;width:372px;height:372px;border-radius:6px;overflow:hidden;border:1px solid #2E2E33;box-shadow:0 34px 60px rgba(0,0,0,0.65)}
+.hhph img{display:block;width:100%;height:100%;object-fit:cover}
+.hhph:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 70px rgba(0,0,0,0.55);pointer-events:none}
+.ck{position:absolute;width:24px;height:24px;border:2px solid #FFD43B;z-index:4}
+.ck1{top:-10px;left:-10px;border-right:0;border-bottom:0}
+.ck2{top:-10px;right:-10px;border-left:0;border-bottom:0}
+.ck3{top:348px;left:-10px;border-right:0;border-top:0}
+.ck4{top:348px;right:-10px;border-left:0;border-top:0}
+.hhcap{display:flex;justify-content:space-between;padding:22px 2px 0;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#3A4150}
+.hhtag{position:absolute;left:32px;top:300px;max-width:290px;z-index:4;font-size:14px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;line-height:1.5}
+.hhcopy{position:absolute;left:32px;bottom:196px;z-index:4;font-size:15px;font-weight:700;color:#3A4150}
+.hhname{position:absolute;left:28px;bottom:26px;z-index:4;font-size:160px;line-height:0.86;letter-spacing:-0.06em;text-transform:uppercase;margin:0}
+.hhpolar{position:absolute;left:41%;top:250px;width:214px;background:#141416;border:1px solid #2E2E33;padding:10px;z-index:4;animation:bob 6s ease-in-out infinite;box-shadow:0 24px 40px rgba(0,0,0,0.5)}
+.hhtalk{position:absolute;right:48px;bottom:34px;width:372px;background:#141416;color:#FFFFFF;padding:14px;display:flex;gap:14px;align-items:center;z-index:5;box-sizing:border-box;border:1px solid #2E2E33;text-decoration:none;cursor:pointer;transition:transform 0.2s ease,box-shadow 0.2s ease}
+.hhtalk:hover{transform:translateY(-3px)}
+.wabtn{width:44px;height:44px;background:#25D366;color:#FFFFFF;display:flex;align-items:center;justify-content:center;text-decoration:none;border-radius:50%;flex:none;transition:background 0.2s ease}
+.wabtn svg{display:block}
+.hhtalk .ava{width:64px;height:64px;border-radius:50%;flex:none;overflow:hidden;position:relative;border:2px solid #FFFFFF;box-shadow:0 6px 14px rgba(30,45,100,0.18);background:#FFD646}
+.hhtalk .ava img{position:absolute;width:132%;height:auto;max-width:none;left:50%;top:-10%;transform:translateX(-54%);display:block}
+.hhtalk:hover .wabtn{background:#1DA851}
+@media (max-width:900px){
+.hhstage{height:auto;display:flex;flex-direction:column;padding-top:84px}
+.hhtag,.hhcopy,.hhname,.hhpolar,.hhtalk,.hhfr{position:static}
+.hhtag{max-width:none;margin-bottom:12px}
+.hhfr{width:100%;max-width:372px;margin:24px auto 0}
+.hhph{width:100%;height:auto;aspect-ratio:1/1}
+.ck3,.ck4{top:auto;bottom:34px}
+.hhname{font-size:84px;margin-top:20px;position:relative}
+.hhpolar{margin:20px 0}
+.hhtalk{width:auto;margin:0 0 28px}
+.hhlinks{display:none}
+}
+/* palette: graphite + Python yellow, matched to the portrait */
+.btn{background:#FFD43B !important;color:#0B0C0F !important}
+.btn:hover{background:#FFE27A !important;box-shadow:0 14px 28px rgba(255,212,59,0.28) !important}
+.svc:hover{background:#FFD43B;border-color:#FFD43B}
+.svc:hover h3{color:#0B0C0F}
+.svc:hover p{color:#1B1B1F !important}
+.svc:hover .svi{background:#0B0C0F;color:#FFD43B}
+.cta{background:#FFD43B !important;color:#0B0C0F}
+.cta:before{background:#0B0C0F !important}
+.cta .eyebrow{color:#0B0C0F !important}
+.cta .eyebrow:before{background:#0B0C0F !important}
+.cta h2{color:#0B0C0F !important}
+.cta p{color:#1B1B1F !important}
+.cta .mail{color:#0B0C0F !important;border-bottom-color:#0B0C0F !important}
+.cta .mail:hover{color:#3A3A3A !important}
+.cta a.gh{color:#0B0C0F !important;border-color:rgba(11,12,15,0.6) !important}
+
+/* ===== light theme ===== */
+.pg{background:#FAF8F3 !important;color:#15171C !important}
+.hd{color:inherit}
+.chip{color:#2A2F3A !important;border-color:#D9D6CB !important;background:#FFFFFF}
+.chip:hover{background:#2F5BEA !important;color:#FFFFFF !important;border-color:#2F5BEA !important}
+.eyebrow{color:#2F5BEA !important}
+.eyebrow:before{background:#2F5BEA !important}
+.btn{background:#2F5BEA !important;color:#FFFFFF !important}
+.btn:hover{background:#234BCB !important;box-shadow:0 14px 28px rgba(47,91,234,0.28) !important}
+.btn2{color:#15171C !important;border-color:#CFCBBE !important}
+.btn2:hover{border-color:#2F5BEA !important}
+.y{color:#E0A100 !important}
+.avail{background:#FFFFFF !important;border-color:#E4E1D8 !important;color:#2A2F3A !important}
+.band{border-color:#E4E1D8 !important}
+.track span{color:#2A2F3A !important}
+.track i{color:#2F5BEA !important}
+.show{border-top-color:#E4E1D8 !important}
+.num{color:#2F5BEA !important}
+.role{color:#9A6B00 !important}
+.sin{filter:drop-shadow(0 26px 30px rgba(30,45,100,0.18)) !important}
+.svc{background:#FFFFFF !important;border-color:#E4E1D8 !important}
+.svc:hover{background:#2F5BEA !important;border-color:#2F5BEA !important}
+.svc:hover h3{color:#FFFFFF !important}
+.svc:hover p{color:#E6ECFF !important}
+.svi{background:#EEF2FF !important;color:#2F5BEA !important}
+.svc:hover .svi{background:#FFFFFF !important;color:#2F5BEA !important}
+.stt{border-top-color:#E4E1D8 !important}
+.stt b{color:#15171C !important}
+.cta{background:#2F5BEA !important;color:#FFFFFF !important}
+.cta:before{background:#FFD43B !important}
+.cta .eyebrow{color:#FFFFFF !important}
+.cta .eyebrow:before{background:#FFFFFF !important}
+.cta h2{color:#FFFFFF !important}
+.cta p{color:#E6ECFF !important}
+.cta .mail{color:#FFFFFF !important;border-bottom-color:#FFD43B !important}
+.cta .mail:hover{color:#FFD43B !important}
+.cta a.gh{color:#FFFFFF !important;border-color:rgba(255,255,255,0.7) !important}
+/* header */
+.hh{background-color:#F3F5FF !important;color:#15171C !important;background-image:radial-gradient(ellipse at 78% 46%,rgba(255,212,59,0.30),transparent 52%),linear-gradient(rgba(47,91,234,0.09) 1px,transparent 1px),linear-gradient(90deg,rgba(47,91,234,0.09) 1px,transparent 1px) !important;background-size:100% 100%,25% 33.34%,25% 33.34% !important}
+.hhghost{color:rgba(47,91,234,0.07) !important}
+.pm{color:rgba(47,91,234,0.45) !important}
+.hhlinks a,.hhic{color:#15171C !important}
+.hhlinks a:hover,.hhic:hover{color:#2F5BEA !important}
+.hhbtn{background:#2F5BEA !important;color:#FFFFFF !important}
+.hhcopy{color:#3A4150 !important}
+.hhfr{right:72px !important;top:190px !important;width:300px !important}
+.hhph{width:300px !important;height:380px !important;border-radius:150px 150px 22px 22px !important;border:0 !important;background:#FFD646 !important;box-shadow:18px 18px 0 #2F5BEA !important;overflow:hidden}
+.hhph img{position:absolute !important;left:0 !important;bottom:0 !important;width:100% !important;height:auto !important;object-fit:initial !important}
+.hhph:after{display:none !important}
+.hhcap{color:#3A4150 !important;padding-top:34px !important}
+.hhbadge{position:absolute;left:-26px;top:70px;width:60px;height:60px;border-radius:50%;background:#2F5BEA;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-size:26px;z-index:4;animation:spin 10s linear infinite;box-shadow:0 10px 24px rgba(47,91,234,0.35)}
+.hhpolar{background:#FFFFFF !important;border-color:#E4E1D8 !important;box-shadow:0 24px 40px rgba(30,45,100,0.14) !important;left:43% !important;top:240px !important}
+.hhtalk{background:#FFFFFF !important;color:#15171C !important;border-color:#E4E1D8 !important;box-shadow:0 20px 40px rgba(30,45,100,0.12);width:320px !important;right:72px !important}
+.hhname{color:#15171C !important}
+@media (max-width:900px){
+.hhfr{width:100% !important;max-width:300px !important;margin:24px auto 0 !important}
+.hhph{width:100% !important}
+.hhbadge{left:-12px}
+.hhtalk{width:auto !important}
+}
+footer{color:#6A7183}
+
+/* portrait polish: studio-style backdrop and soft shadow */
+.hhph{background:radial-gradient(circle at 50% 30%,#FFE98A 0%,#FFD646 55%,#F4BE22 100%) !important}
+.hhph img{filter:drop-shadow(0 14px 16px rgba(110,70,0,0.28)) !important}
+.hhph:before{content:"";position:absolute;left:12%;right:12%;bottom:0;height:46%;background:radial-gradient(ellipse at 50% 100%,rgba(110,70,0,0.22),transparent 70%);z-index:1;pointer-events:none}
+.hhph img{z-index:2}
+
+/* header without a photo: code card + talk card form the right column */
+.hhpolar{left:auto !important;right:72px !important;top:230px !important;width:300px !important}
+.hhtalk{right:72px !important}
+
+/* header: only the Let's talk card */
+.hhstage{height:620px !important}
+.hhtag{top:200px !important}
+.hhtalk{top:230px !important;bottom:auto !important;right:32px !important;width:360px !important;padding:20px !important;gap:18px !important}
+.hhtalk .hhtl{font-family:'Inter Tight',sans-serif;font-weight:800;font-size:26px;letter-spacing:-0.03em;line-height:1.1}
+@media (max-width:900px){.hhtalk{top:auto !important;width:auto !important}.hhstage{height:auto !important}}
+#work.sec{padding:72px 0 24px}
+#work .h2{font-size:46px}
+#work .lead{font-size:16px;color:#5A6070;max-width:640px;margin:0 0 22px}
+.workgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.workgrid .show{flex-direction:column;align-items:stretch;gap:0;padding:0;border:1px solid #E4E1D8;border-radius:20px;background:#FFFFFF;overflow:hidden;min-width:0;transition:transform 0.25s ease,box-shadow 0.25s ease}
+.workgrid .show.rev{flex-direction:column}
+.workgrid .show:hover{transform:translateY(-4px);box-shadow:0 16px 30px rgba(30,45,100,0.1)}
+.workgrid .sv{flex:none;width:100%;padding:14px 14px 0;border-radius:0}
+.workgrid .sin{filter:none}
+.workgrid .show:hover .sin{transform:none}
+.workgrid .sin svg{width:100% !important;height:128px !important;display:block}
+.workgrid .si{flex:none;min-width:0;padding:12px 16px 16px}
+.workgrid .num{font-size:13px;margin-bottom:4px}
+.workgrid .st{font-size:24px;line-height:1.08;letter-spacing:-0.03em;margin:0 0 4px}
+.workgrid .role{font-size:12.5px;margin-bottom:8px}
+.workgrid .sd{font-size:14px;line-height:1.5;margin:0 0 10px;max-width:none}
+.workgrid .facts{list-style:none;margin:0 0 12px;padding:0;display:flex;flex-direction:column;gap:5px}
+.workgrid .facts li{position:relative;padding-left:14px;font-size:13px;line-height:1.4;color:#3A4150}
+.workgrid .facts li:before{content:"";position:absolute;left:0;top:0.45em;width:6px;height:6px;border-radius:50%;background:#2F5BEA}
+.workgrid .chip{font-size:12px;padding:3px 9px}
+@media (max-width:900px){#work .h2{font-size:34px}.workgrid{grid-template-columns:1fr}.workgrid .st{font-size:22px}}
+.sites{margin-top:42px}
+.siterow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:16px}
+.site{display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border:1px solid #E4E1D8;border-radius:20px;padding:22px 22px 18px;text-decoration:none;color:inherit;min-width:0;box-sizing:border-box;transition:transform .25s ease,box-shadow .25s ease}
+.site:hover,.site.reveal.on.done:hover{transform:translateY(-4px);box-shadow:0 16px 30px rgba(30,45,100,.1)}
+.sitemark{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#2F5BEA}
+.sitename{font-size:26px;letter-spacing:-.03em;line-height:1.05;margin:0}
+.site p{margin:0;color:#5A6070;font-size:15px;line-height:1.55}
+.sitego{margin-top:8px;font-weight:700;font-size:14px;color:#2F5BEA}
+@media (max-width:900px){.siterow{grid-template-columns:1fr}.sitename{font-size:22px}}
+@keyframes riseIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes floatPlus{0%,100%{transform:translate(-50%,-50%)}50%{transform:translate(-50%,calc(-50% - 9px))}}
+.hh>.pm{animation:floatPlus 6.6s ease-in-out infinite}
+.hh>.pm:nth-child(3){animation-duration:7.6s}
+.hh>.pm:nth-child(4){animation-duration:5.8s}
+.hh>.pm:nth-child(5){animation-duration:8.2s}
+.hh>.pm:nth-child(6){animation-duration:6.4s}
+.hh>.pm:nth-child(7){animation-duration:7.2s}
+@media (prefers-reduced-motion: no-preference){
+.reveal{opacity:0;transform:translateY(28px)}
+.reveal.on{animation:riseIn .75s cubic-bezier(.2,.7,.2,1) both}
+.reveal.on.done{animation:none;opacity:1;transform:none}
+}
+</style>
+</helmet>
+<div class="pg">
+
+<header class="hh" id="home">
+<div class="hhghost" aria-hidden="true">KIRAN</div>
+<span class="pm" style="left:25%;top:33.34%" aria-hidden="true">+</span><span class="pm" style="left:50%;top:33.34%" aria-hidden="true">+</span><span class="pm" style="left:75%;top:33.34%" aria-hidden="true">+</span><span class="pm" style="left:25%;top:66.67%" aria-hidden="true">+</span><span class="pm" style="left:50%;top:66.67%" aria-hidden="true">+</span><span class="pm" style="left:75%;top:66.67%" aria-hidden="true">+</span>
+<div class="hhstage">
+<div class="hhnav a1">
+<div class="hd" style="font-size:22px">Kiran<span class="y">.</span></div>
+<nav class="hhlinks"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a></nav>
+<div style="display:flex;gap:14px;align-items:center"><a class="hhic" href="https://github.com/Kiran-profe" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"></path></svg></a><a class="hhic" href="https://www.linkedin.com/in/kiran-kumar-c-s-86064716b" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"></path></svg></a><a class="hhbtn" href="#contact">Hire me</a></div>
+</div>
+<div class="hhtag a2"><span class="avail"><span class="dot"></span>Open for a new build</span><p style="margin:18px 0 0">I build Python systems and integrations that keep business moving.</p></div>
+<div class="hhcopy a2">©2026 · Python Full Stack Developer</div>
+<h1 class="hhname hd a3">Kiran</h1>
+<a class="hhtalk" href="https://wa.me/917510380758?text=Hi%20Kiran%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk." target="_blank" rel="noopener" aria-label="Chat with Kiran on WhatsApp">
+<div class="ava"><img src="./assets/d54d01cca8c4883c79566f5f8e68718e.png" alt="" width="746" height="970"></div>
+<div style="flex:1"><div style="font-size:12px;color:#5A6070">Let's talk</div><div style="font-weight:800">Kiran</div><div style="font-size:12px;color:#5A6070">WhatsApp · Python Full Stack</div></div>
+<span class="wabtn" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83c0 1.74.46 3.44 1.34 4.94L2 22l5.39-1.41a10.1 10.1 0 0 0 4.65 1.15h.01c5.46 0 9.89-4.4 9.89-9.83C21.94 6.4 17.5 2 12.04 2zm5.76 13.9c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.12.11-1.81-.11-.41-.14-.94-.31-1.62-.61-2.85-1.23-4.7-4.1-4.84-4.29-.14-.19-1.16-1.54-1.16-2.94s.73-2.08 1-2.37c.24-.28.64-.41.86-.41h.62c.2 0 .46-.07.72.55.27.64.91 2.22.99 2.38.08.16.13.35.03.56-.1.21-.15.34-.3.52-.15.18-.31.4-.44.54-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.36 1.46.3.15.47.12.65-.07.18-.2.74-.86.94-1.16.2-.3.4-.24.66-.14.27.1 1.7.8 1.99.95.29.14.48.21.55.33.07.12.07.68-.17 1.36z"></path></svg></span>
+</a>
+</div>
+</header>
+
+<div class="band"><div class="track"><span>Python</span><i aria-hidden="true">/</i><span>Django</span><i aria-hidden="true">/</i><span>Flask</span><i aria-hidden="true">/</i><span>AWS Lambda</span><i aria-hidden="true">/</i><span>Shopify</span><i aria-hidden="true">/</i><span>Celigo</span><i aria-hidden="true">/</i><span>Fishbowl</span><i aria-hidden="true">/</i><span>PostgreSQL</span><i aria-hidden="true">/</i><span>MongoDB</span><i aria-hidden="true">/</i><span>RabbitMQ</span><i aria-hidden="true">/</i><span>React</span><i aria-hidden="true">/</i><span>Docker</span><i aria-hidden="true">/</i><span>Python</span><i aria-hidden="true">/</i><span>Django</span><i aria-hidden="true">/</i><span>Flask</span><i aria-hidden="true">/</i><span>AWS Lambda</span><i aria-hidden="true">/</i><span>Shopify</span><i aria-hidden="true">/</i><span>Celigo</span><i aria-hidden="true">/</i><span>Fishbowl</span><i aria-hidden="true">/</i><span>PostgreSQL</span><i aria-hidden="true">/</i><span>MongoDB</span><i aria-hidden="true">/</i><span>RabbitMQ</span><i aria-hidden="true">/</i><span>React</span><i aria-hidden="true">/</i><span>Docker</span><i aria-hidden="true">/</i></div></div>
+
+<section id="work" class="sec wrap">
+<div class="eyebrow">Selected work</div>
+<h2 class="h2" style="margin-bottom:16px">Projects I've built and led.</h2>
+<p class="lead">Client code is private, so these are interface illustrations of each product, with the real role and stack behind them. Public code lives on <a href="https://github.com/Kiran-profe" target="_blank" rel="noopener" style="color:#2F5BEA;font-weight:700">my GitHub</a>.</p>
+<div class="workgrid">
+<article class="show rv"><div class="sv" style="background:#DCE6FF"><div class="sin"><svg viewBox="0 0 560 380" width="100%" role="img" aria-label="Illustration of an order management dashboard" style="display:block;height:auto"><defs><clipPath id="c1"><rect width="560" height="380" rx="14"></rect></clipPath></defs><g clip-path="url(#c1)"><rect width="560" height="380" fill="#F8FAFC"></rect><rect width="560" height="34" fill="#E5EAF2"></rect><circle cx="18" cy="17" r="5" fill="#FF5F57"></circle><circle cx="34" cy="17" r="5" fill="#FFD43B"></circle><circle cx="50" cy="17" r="5" fill="#F2B705"></circle><rect x="100" y="9" width="260" height="16" rx="8" fill="#FFFFFF"></rect><rect x="0" y="34" width="120" height="346" fill="#1A1B1F"></rect><rect x="18" y="52" width="40" height="10" rx="5" fill="#FFD43B"></rect><rect x="18" y="92" width="90" height="12" rx="6" fill="#FFFFFF" opacity="1"></rect><rect x="18" y="122" width="84" height="12" rx="6" fill="#6B6B70" opacity="0.55"></rect><rect x="18" y="152" width="84" height="12" rx="6" fill="#6B6B70" opacity="0.55"></rect><rect x="18" y="182" width="84" height="12" rx="6" fill="#6B6B70" opacity="0.55"></rect><rect x="18" y="212" width="84" height="12" rx="6" fill="#6B6B70" opacity="0.55"></rect><rect x="140" y="54" width="150" height="14" rx="7" fill="#0F172A"></rect><rect x="140" y="84" width="124" height="66" rx="10" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="154" y="98" width="48" height="8" rx="4" fill="#CBD5E1"></rect><rect x="154" y="116" width="68" height="18" rx="5" fill="#0F172A"></rect><circle cx="240" cy="108" r="9" fill="#F2B705"></circle><rect x="278" y="84" width="124" height="66" rx="10" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="292" y="98" width="48" height="8" rx="4" fill="#CBD5E1"></rect><rect x="292" y="116" width="68" height="18" rx="5" fill="#0F172A"></rect><circle cx="378" cy="108" r="9" fill="#FFD43B"></circle><rect x="416" y="84" width="124" height="66" rx="10" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="430" y="98" width="48" height="8" rx="4" fill="#CBD5E1"></rect><rect x="430" y="116" width="68" height="18" rx="5" fill="#0F172A"></rect><circle cx="516" cy="108" r="9" fill="#10B981"></circle><rect x="140" y="166" width="400" height="196" rx="12" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="156" y="180" width="90" height="10" rx="5" fill="#94A3B8"></rect><circle cx="166" cy="217" r="8" fill="#F2B705"></circle><rect x="184" y="212" width="190" height="10" rx="5" fill="#E2E8F0"></rect><rect x="398" y="212" width="46" height="10" rx="5" fill="#E2E8F0"></rect><rect class="" x="458" y="209" width="58" height="16" rx="8" fill="#FFF1C2"></rect><circle cx="166" cy="253" r="8" fill="#F2B705"></circle><rect x="184" y="248" width="190" height="10" rx="5" fill="#E2E8F0"></rect><rect x="398" y="248" width="46" height="10" rx="5" fill="#E2E8F0"></rect><rect class="pul" x="458" y="245" width="58" height="16" rx="8" fill="#FFD43B"></rect><circle cx="166" cy="289" r="8" fill="#F2B705"></circle><rect x="184" y="284" width="190" height="10" rx="5" fill="#E2E8F0"></rect><rect x="398" y="284" width="46" height="10" rx="5" fill="#E2E8F0"></rect><rect class="" x="458" y="281" width="58" height="16" rx="8" fill="#FFF1C2"></rect><circle cx="166" cy="325" r="8" fill="#F2B705"></circle><rect x="184" y="320" width="190" height="10" rx="5" fill="#E2E8F0"></rect><rect x="398" y="320" width="46" height="10" rx="5" fill="#E2E8F0"></rect><rect class="pul" x="458" y="317" width="58" height="16" rx="8" fill="#FFD43B"></rect></g></svg></div></div><div class="si"><div class="num">01</div><h3 class="hd st">Warehouse Order Management</h3><div class="role">Full stack developer · Ongoing</div><p class="sd">A live warehouse system on Shopify. I add features, keep the order flow fast, and built the Flask screens so staff can follow an order from the store through fulfillment.</p><ul class="facts"><li>New features on the live order flow while the warehouse stays online</li><li>Flask screens with clearer status tracking for each order</li><li>Performance tuning so lists and updates stay quick in daily use</li></ul><div class="chips"><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Shopify</span><span class="chip">HTML</span></div></div></article>
+<article class="show rv rev"><div class="sv" style="background:#FFE9A3"><div class="sin"><svg viewBox="0 0 560 380" width="100%" role="img" aria-label="Illustration of a staff and client management board" style="display:block;height:auto"><defs><clipPath id="c2"><rect width="560" height="380" rx="14"></rect></clipPath></defs><g clip-path="url(#c2)"><rect width="560" height="380" fill="#F8FAFC"></rect><rect width="560" height="34" fill="#E5EAF2"></rect><circle cx="18" cy="17" r="5" fill="#FF5F57"></circle><circle cx="34" cy="17" r="5" fill="#FFD43B"></circle><circle cx="50" cy="17" r="5" fill="#F2B705"></circle><rect x="100" y="9" width="260" height="16" rx="8" fill="#FFFFFF"></rect><rect x="0" y="34" width="120" height="346" fill="#1A1B1F"></rect><rect x="18" y="52" width="40" height="10" rx="5" fill="#FFD43B"></rect><rect x="18" y="92" width="84" height="12" rx="6" fill="#6B6B70" opacity="0.55"></rect><rect x="18" y="122" width="90" height="12" rx="6" fill="#FFFFFF" opacity="1"></rect><rect x="18" y="152" width="84" height="12" rx="6" fill="#6B6B70" opacity="0.55"></rect><rect x="18" y="182" width="84" height="12" rx="6" fill="#6B6B70" opacity="0.55"></rect><rect x="18" y="212" width="84" height="12" rx="6" fill="#6B6B70" opacity="0.55"></rect><rect x="140" y="54" width="150" height="14" rx="7" fill="#0F172A"></rect><rect x="140" y="84" width="124" height="278" rx="12" fill="#EEF2F8"></rect><rect x="152" y="98" width="52" height="10" rx="5" fill="#F2B705"></rect><g class=""><rect x="150" y="122" width="104" height="64" rx="8" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="160" y="134" width="70" height="8" rx="4" fill="#0F172A"></rect><rect x="160" y="150" width="52" height="7" rx="3.5" fill="#CBD5E1"></rect><circle cx="238" cy="166" r="9" fill="#F2B705"></circle></g><g class=""><rect x="150" y="198" width="104" height="64" rx="8" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="160" y="210" width="70" height="8" rx="4" fill="#0F172A"></rect><rect x="160" y="226" width="52" height="7" rx="3.5" fill="#CBD5E1"></rect><circle cx="238" cy="242" r="9" fill="#F2B705"></circle></g><g class=""><rect x="150" y="274" width="104" height="64" rx="8" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="160" y="286" width="70" height="8" rx="4" fill="#0F172A"></rect><rect x="160" y="302" width="52" height="7" rx="3.5" fill="#CBD5E1"></rect><circle cx="238" cy="318" r="9" fill="#F2B705"></circle></g><rect x="274" y="84" width="124" height="278" rx="12" fill="#EEF2F8"></rect><rect x="286" y="98" width="52" height="10" rx="5" fill="#FFD43B"></rect><g class="sl"><rect x="284" y="122" width="104" height="64" rx="8" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="294" y="134" width="70" height="8" rx="4" fill="#0F172A"></rect><rect x="294" y="150" width="52" height="7" rx="3.5" fill="#CBD5E1"></rect><circle cx="372" cy="166" r="9" fill="#FFD43B"></circle></g><g class=""><rect x="284" y="198" width="104" height="64" rx="8" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="294" y="210" width="70" height="8" rx="4" fill="#0F172A"></rect><rect x="294" y="226" width="52" height="7" rx="3.5" fill="#CBD5E1"></rect><circle cx="372" cy="242" r="9" fill="#FFD43B"></circle></g><g class=""><rect x="284" y="274" width="104" height="64" rx="8" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="294" y="286" width="70" height="8" rx="4" fill="#0F172A"></rect><rect x="294" y="302" width="52" height="7" rx="3.5" fill="#CBD5E1"></rect><circle cx="372" cy="318" r="9" fill="#FFD43B"></circle></g><rect x="408" y="84" width="124" height="278" rx="12" fill="#EEF2F8"></rect><rect x="420" y="98" width="52" height="10" rx="5" fill="#10B981"></rect><g class=""><rect x="418" y="122" width="104" height="64" rx="8" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="428" y="134" width="70" height="8" rx="4" fill="#0F172A"></rect><rect x="428" y="150" width="52" height="7" rx="3.5" fill="#CBD5E1"></rect><circle cx="506" cy="166" r="9" fill="#10B981"></circle></g><g class=""><rect x="418" y="198" width="104" height="64" rx="8" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="428" y="210" width="70" height="8" rx="4" fill="#0F172A"></rect><rect x="428" y="226" width="52" height="7" rx="3.5" fill="#CBD5E1"></rect><circle cx="506" cy="242" r="9" fill="#10B981"></circle></g></g></svg></div></div><div class="si"><div class="num">02</div><h3 class="hd st">Elead</h3><div class="role">Team lead · 6 months</div><p class="sd">Led a staff and client app for a marketing company. Staff work their clients day to day, and admins assign tasks and oversee the same records.</p><ul class="facts"><li>Staff dashboard to track clients and the tasks on each account</li><li>Admin dashboard for assignments and a view across the team</li><li>Django REST API on AWS feeding both dashboards</li></ul><div class="chips"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">REST API</span><span class="chip">AWS</span></div></div></article>
+<article class="show rv"><div class="sv" style="background:#EDE9DD"><div class="sin"><svg viewBox="0 0 560 380" width="100%" role="img" aria-label="Illustration of a medical device marketplace storefront" style="display:block;height:auto"><defs><clipPath id="c3"><rect width="560" height="380" rx="14"></rect></clipPath></defs><g clip-path="url(#c3)"><rect width="560" height="380" fill="#F8FAFC"></rect><rect width="560" height="34" fill="#E5EAF2"></rect><circle cx="18" cy="17" r="5" fill="#FF5F57"></circle><circle cx="34" cy="17" r="5" fill="#FFD43B"></circle><circle cx="50" cy="17" r="5" fill="#F2B705"></circle><rect x="100" y="9" width="260" height="16" rx="8" fill="#FFFFFF"></rect><rect x="0" y="34" width="560" height="44" fill="#FFFFFF"></rect><rect x="22" y="48" width="70" height="16" rx="8" fill="#1A1B1F"></rect><rect x="170" y="46" width="230" height="20" rx="10" fill="#EEF2F8"></rect><circle cx="478" cy="56" r="10" fill="#FFD43B"></circle><circle cx="512" cy="56" r="10" fill="#F2B705"></circle><rect x="24" y="96" width="160" height="128" rx="12" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="34" y="106" width="140" height="64" rx="8" fill="#F4F1E8"></rect><circle cx="104" cy="138" r="16" fill="#F2B705"></circle><rect x="98" y="128" width="12" height="20" fill="#FFFFFF"></rect><rect x="94" y="134" width="20" height="8" fill="#FFFFFF"></rect><rect x="34" y="182" width="80" height="8" rx="4" fill="#0F172A"></rect><rect x="34" y="198" width="40" height="8" rx="4" fill="#94A3B8"></rect><rect x="124" y="194" width="50" height="18" rx="9" fill="#FFD43B"></rect><rect x="200" y="96" width="160" height="128" rx="12" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="210" y="106" width="140" height="64" rx="8" fill="#F4F1E8"></rect><circle cx="280" cy="138" r="16" fill="#F2B705"></circle><rect x="274" y="128" width="12" height="20" fill="#FFFFFF"></rect><rect x="270" y="134" width="20" height="8" fill="#FFFFFF"></rect><rect x="210" y="182" width="80" height="8" rx="4" fill="#0F172A"></rect><rect x="210" y="198" width="40" height="8" rx="4" fill="#94A3B8"></rect><rect x="300" y="194" width="50" height="18" rx="9" fill="#FFD43B"></rect><rect x="376" y="96" width="160" height="128" rx="12" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="386" y="106" width="140" height="64" rx="8" fill="#F4F1E8"></rect><circle cx="456" cy="138" r="16" fill="#F2B705"></circle><rect x="450" y="128" width="12" height="20" fill="#FFFFFF"></rect><rect x="446" y="134" width="20" height="8" fill="#FFFFFF"></rect><rect x="386" y="182" width="80" height="8" rx="4" fill="#0F172A"></rect><rect x="386" y="198" width="40" height="8" rx="4" fill="#94A3B8"></rect><rect x="476" y="194" width="50" height="18" rx="9" fill="#FFD43B"></rect><rect x="24" y="236" width="160" height="128" rx="12" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="34" y="246" width="140" height="64" rx="8" fill="#F4F1E8"></rect><circle cx="104" cy="278" r="16" fill="#F2B705"></circle><rect x="98" y="268" width="12" height="20" fill="#FFFFFF"></rect><rect x="94" y="274" width="20" height="8" fill="#FFFFFF"></rect><rect x="34" y="322" width="80" height="8" rx="4" fill="#0F172A"></rect><rect x="34" y="338" width="40" height="8" rx="4" fill="#94A3B8"></rect><rect x="124" y="334" width="50" height="18" rx="9" fill="#FFD43B"></rect><rect x="200" y="236" width="160" height="128" rx="12" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="210" y="246" width="140" height="64" rx="8" fill="#F4F1E8"></rect><circle cx="280" cy="278" r="16" fill="#F2B705"></circle><rect x="274" y="268" width="12" height="20" fill="#FFFFFF"></rect><rect x="270" y="274" width="20" height="8" fill="#FFFFFF"></rect><rect x="210" y="322" width="80" height="8" rx="4" fill="#0F172A"></rect><rect x="210" y="338" width="40" height="8" rx="4" fill="#94A3B8"></rect><rect x="300" y="334" width="50" height="18" rx="9" fill="#FFD43B"></rect><rect x="376" y="236" width="160" height="128" rx="12" fill="#FFFFFF" stroke="#E2E8F0"></rect><rect x="386" y="246" width="140" height="64" rx="8" fill="#F4F1E8"></rect><circle cx="456" cy="278" r="16" fill="#F2B705"></circle><rect x="450" y="268" width="12" height="20" fill="#FFFFFF"></rect><rect x="446" y="274" width="20" height="8" fill="#FFFFFF"></rect><rect x="386" y="322" width="80" height="8" rx="4" fill="#0F172A"></rect><rect x="386" y="338" width="40" height="8" rx="4" fill="#94A3B8"></rect><rect x="476" y="334" width="50" height="18" rx="9" fill="#FFD43B"></rect><g class="rot"><circle cx="150" cy="116" r="11" fill="#10B981"></circle></g><path d="M145 116 l4 4 l7 -8" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></div></div><div class="si"><div class="num">03</div><h3 class="hd st">Meddevice</h3><div class="role">Team lead · 8 months</div><p class="sd">Led an eight-month marketplace for medical devices. A seller can list only after registration and verification. Customers sign up and buy from those listings.</p><ul class="facts"><li>Seller accounts with a verification step before a listing goes live</li><li>Customer signup, catalog browsing, and purchase on the same product</li><li>Django REST API on AWS for accounts, listings, and orders</li></ul><div class="chips"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">REST API</span><span class="chip">AWS</span></div></div></article>
+<article class="show rv rev"><div class="sv" style="background:#D5DEF7"><div class="sin"><svg viewBox="0 0 560 380" width="100%" role="img" aria-label="Illustration of a property rent and payments screen" style="display:block;height:auto"><defs><clipPath id="c4"><rect width="560" height="380" rx="14"></rect></clipPath></defs><g clip-path="url(#c4)"><rect width="560" height="380" fill="#F8FAFC"></rect><rect width="560" height="34" fill="#E5EAF2"></rect><circle cx="18" cy="17" r="5" fill="#FF5F57"></circle><circle cx="34" cy="17" r="5" fill="#FFD43B"></circle><circle cx="50" cy="17" r="5" fill="#F2B705"></circle><rect x="100" y="9" width="260" height="16" rx="8" fill="#FFFFFF"></rect><rect x="0" y="34" width="120" height="346" fill="#1A1B1F"></rect><rect x="18" y="52" width="40" height="10" rx="5" fill="#FFD43B"></rect><rect x="18" y="92" width="84" height="12" rx="6" fill="#6B6B70" opacity="0.55"></rect><rect x="18" y="122" width="84" height="12" rx="6" fill="#6B6B70" opacity="0.55"></rect><rect x="18" y="152" width="90" height="12" rx="6" fill="#FFFFFF" opacity="1"></rect><rect x="18" y="182" width="84" height="12" rx="6" fill="#6B6B70" opacity="0.55"></rect><rect x="18" y="212" width="84" height="12" rx="6" fill="#6B6B70" opacity="0.55"></rect><rect x="140" y="54" width="150" height="14" rx="7" fill="#0F172A"></rect><rect x="140" y="84" width="400" height="278" rx="12" fill="#FFFFFF" stroke="#E2E8F0"></rect><circle cx="166" cy="119" r="8" fill="#F2B705"></circle><rect x="184" y="114" width="190" height="10" rx="5" fill="#E2E8F0"></rect><rect x="398" y="114" width="46" height="10" rx="5" fill="#E2E8F0"></rect><rect class="" x="458" y="111" width="58" height="16" rx="8" fill="#FFF1C2"></rect><circle cx="166" cy="165" r="8" fill="#F2B705"></circle><rect x="184" y="160" width="190" height="10" rx="5" fill="#E2E8F0"></rect><rect x="398" y="160" width="46" height="10" rx="5" fill="#E2E8F0"></rect><rect class="" x="458" y="157" width="58" height="16" rx="8" fill="#FFF1C2"></rect><circle cx="166" cy="211" r="8" fill="#F2B705"></circle><rect x="184" y="206" width="190" height="10" rx="5" fill="#E2E8F0"></rect><rect x="398" y="206" width="46" height="10" rx="5" fill="#E2E8F0"></rect><rect class="pul" x="458" y="203" width="58" height="16" rx="8" fill="#FFD43B"></rect><circle cx="166" cy="257" r="8" fill="#F2B705"></circle><rect x="184" y="252" width="190" height="10" rx="5" fill="#E2E8F0"></rect><rect x="398" y="252" width="46" height="10" rx="5" fill="#E2E8F0"></rect><rect class="" x="458" y="249" width="58" height="16" rx="8" fill="#FFF1C2"></rect><circle cx="166" cy="303" r="8" fill="#F2B705"></circle><rect x="184" y="298" width="190" height="10" rx="5" fill="#E2E8F0"></rect><rect x="398" y="298" width="46" height="10" rx="5" fill="#E2E8F0"></rect><rect class="" x="458" y="295" width="58" height="16" rx="8" fill="#FFF1C2"></rect><g class="sl"><rect x="330" y="296" width="196" height="50" rx="12" fill="#0F172A"></rect><circle cx="352" cy="321" r="11" fill="#10B981"></circle><path d="M347 321 l4 4 l8 -9" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><rect x="372" y="309" width="110" height="8" rx="4" fill="#FFFFFF"></rect><rect x="372" y="326" width="76" height="7" rx="3.5" fill="#94A3B8"></rect></g></g></svg></div></div><div class="si"><div class="num">04</div><h3 class="hd st">Property Management</h3><div class="role">Application developer · 12 months</div><p class="sd">A year-long application for rent, contract periods, and payment alerts, with redeem points and offers attached to each tenant.</p><ul class="facts"><li>Rent records and contract dates kept together for every tenant</li><li>Payment notifications when an amount is due or a period is ending</li><li>Redeem points and offers tenants can use from their account</li></ul><div class="chips"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">JavaScript</span><span class="chip">jQuery</span></div></div></article>
+</div>
+</section>
+
+<section id="services" class="sec wrap" style="padding-top:20px">
+<div class="eyebrow">Services</div>
+<h2 class="h2" style="margin-bottom:44px">How I can help.</h2>
+<div class="row"><div class="svc rv"><div class="svi"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6l-5 6 5 6"></path><path d="M16 6l5 6-5 6"></path><path d="M14 4l-4 16"></path></svg></div><h3 class="hd" style="font-size:26px;margin:0 0 10px">Backend &amp; APIs</h3><p style="margin:0;color:#5A6070;font-size:16px">Django and Flask applications and REST APIs, built to be easy to maintain.</p></div><div class="svc rv"><div class="svi"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="2.5"></circle><circle cx="19" cy="6" r="2.5"></circle><circle cx="19" cy="18" r="2.5"></circle><path d="M7.3 11l9.4-4M7.3 13l9.4 4"></path></svg></div><h3 class="hd" style="font-size:26px;margin:0 0 10px">Integrations</h3><p style="margin:0;color:#5A6070;font-size:16px">Shopify, Celigo and Fishbowl connected so orders and stock stay in sync.</p></div><div class="svc rv"><div class="svi"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a4 4 0 010-8 5.5 5.5 0 0110.6-1.5A4.5 4.5 0 0117 18z"></path></svg></div><h3 class="hd" style="font-size:26px;margin:0 0 10px">Serverless on AWS</h3><p style="margin:0;color:#5A6070;font-size:16px">Lambda workflows with RabbitMQ, PostgreSQL and MongoDB for background jobs.</p></div></div>
+</section>
+
+<section id="about" class="sec wrap" style="padding-top:20px">
+<div style="display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between;align-items:flex-start;margin-bottom:48px">
+<div style="flex:1 1 520px;min-width:0"><div class="eyebrow">About</div><h2 class="h2">Backend engineer, <span class="y">team lead,</span> problem solver.</h2></div>
+<p style="flex:1 1 340px;min-width:0;font-size:19px;color:#5A6070;margin:40px 0 0">Based in Kerala, I've spent 7+ years building Python web applications. I connect Shopify with business systems, build Django and Flask products and run services on AWS, from first idea to production. I work in English, Hindi, Tamil and Malayalam.</p>
+</div>
+<div class="stats">
+<div class="stt rv"><b>7+</b><span>years of experience</span></div>
+<div class="stt rv"><b>24+</b><span>projects</span></div>
+<div class="stt rv"><b>5</b><span>companies and teams</span></div>
+<div class="stt rv"><b>4</b><span>languages spoken</span></div>
+</div>
+<div class="sites">
+<div class="eyebrow">Websites shipped</div>
+<div class="siterow">
+<a class="site" href="https://cmcdubai.ae/" target="_blank" rel="noopener">
+<div class="sitemark">Hospital · Dubai</div>
+<h3 class="hd sitename">Clemenceau Medical Center</h3>
+<p>A front door for a full hospital. Patients look up a specialty or a doctor, book the visit, and still have a 24/7 emergency line when the desk is closed. The same site speaks English, Arabic, French, and German.</p>
+<span class="sitego">cmcdubai.ae ↗</span>
+</a>
+<a class="site" href="https://bluepearllaundry.com/" target="_blank" rel="noopener">
+<div class="sitemark">Laundry · Jumeirah</div>
+<h3 class="hd sitename">Blue Pearl Laundry</h3>
+<p>Four quiet steps from a pile of clothes to a pressed delivery. Book a pickup in Umm Suqeim, then washing, dry cleaning, ironing, and stain care come back folded to the door.</p>
+<span class="sitego">bluepearllaundry.com ↗</span>
+</a>
+</div>
+</div>
+</section>
+
+<section id="contact" class="wrap" style="padding:20px 32px 50px">
+<div class="cta rv">
+<div class="eyebrow" style="color:#0B0C0F"><span style="display:none"></span>Contact</div>
+<h2 class="h2" style="font-size:76px;margin:16px 0 26px;max-width:760px;color:#FFFFFF">Let's build something reliable.</h2>
+<p style="font-size:19px;max-width:540px;margin:0 0 32px;color:#1B1B1F">Tell me what you need to build or connect. I'll reply with questions and a suggested first step.</p>
+<a class="mail" href="mailto:kiranprofe@gmail.com">kiranprofe@gmail.com</a>
+<div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px"><a class="gh" href="https://wa.me/917510380758?text=Hi%20Kiran%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk." target="_blank" rel="noopener" style="color:#FFFFFF;font-weight:700;text-decoration:none;border:1.5px solid rgba(255,255,255,0.7);border-radius:999px;padding:12px 24px;min-height:44px;box-sizing:border-box"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83c0 1.74.46 3.44 1.34 4.94L2 22l5.39-1.41a10.1 10.1 0 0 0 4.65 1.15h.01c5.46 0 9.89-4.4 9.89-9.83C21.94 6.4 17.5 2 12.04 2zm5.76 13.9c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.12.11-1.81-.11-.41-.14-.94-.31-1.62-.61-2.85-1.23-4.7-4.1-4.84-4.29-.14-.19-1.16-1.54-1.16-2.94s.73-2.08 1-2.37c.24-.28.64-.41.86-.41h.62c.2 0 .46-.07.72.55.27.64.91 2.22.99 2.38.08.16.13.35.03.56-.1.21-.15.34-.3.52-.15.18-.31.4-.44.54-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.36 1.46.3.15.47.12.65-.07.18-.2.74-.86.94-1.16.2-.3.4-.24.66-.14.27.1 1.7.8 1.99.95.29.14.48.21.55.33.07.12.07.68-.17 1.36z"></path></svg>Chat on WhatsApp</a><a class="gh" href="https://github.com/Kiran-profe" target="_blank" rel="noopener" style="color:#FFFFFF;font-weight:700;text-decoration:none;border:1.5px solid rgba(255,255,255,0.7);border-radius:999px;padding:12px 24px;min-height:44px;box-sizing:border-box"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"></path></svg>See my code on GitHub ↗</a><a class="gh" href="https://www.linkedin.com/in/kiran-kumar-c-s-86064716b" target="_blank" rel="noopener" style="color:#FFFFFF;font-weight:700;text-decoration:none;border:1.5px solid rgba(255,255,255,0.7);border-radius:999px;padding:12px 24px;min-height:44px;box-sizing:border-box"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"></path></svg>Connect on LinkedIn ↗</a></div>
+</div>
+</section>
+
+<footer class="wrap" style="padding-top:12px;padding-bottom:40px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:14px;color:#6A7183">
+<span>© 2026 Kiran Kumar C S</span><a class="gh" href="https://github.com/Kiran-profe" target="_blank" rel="noopener" style="color:#3A4150;text-decoration:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"></path></svg>github.com/Kiran-profe</a><a class="gh" href="https://www.linkedin.com/in/kiran-kumar-c-s-86064716b" target="_blank" rel="noopener" style="color:#3A4150;text-decoration:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"></path></svg>LinkedIn</a><span>Python Full Stack Developer · Thrissur, Kerala, India</span>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":5400}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+<script>
+(function(){
+if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+var groups=[".band","#work .eyebrow, #work .h2, #work .lead",".workgrid .show","#services .eyebrow, #services .h2",".svc","#about > div:first-child .eyebrow, #about > div:first-child .h2, #about > div:first-child p","#about .sites .eyebrow",".site",".stt",".cta","footer"];
+var io=new IntersectionObserver(function(entries){
+entries.forEach(function(entry){
+if(!entry.isIntersecting)return;
+var el=entry.target;
+el.classList.add("on");
+io.unobserve(el);
+if(el.classList.contains("stt")){
+var num=el.querySelector("b");
+if(num)countUp(num);
+}
+});
+},{threshold:0.2,rootMargin:"0px 0px -6% 0px"});
+function countUp(el){
+if(el.dataset.counted)return;
+el.dataset.counted="1";
+var raw=(el.dataset.final||el.textContent).trim();
+el.dataset.final=raw;
+var m=raw.match(/^(\d+)(\+?)$/);
+if(!m)return;
+var end=Number(m[1]),suffix=m[2]||"",start=performance.now(),dur=1100;
+el.textContent="0"+suffix;
+function tick(now){
+var p=Math.min(1,(now-start)/dur),eased=1-Math.pow(1-p,3);
+el.textContent=Math.round(end*eased)+suffix;
+if(p<1)requestAnimationFrame(tick);
+}
+requestAnimationFrame(tick);
+}
+function prep(el,delay){
+if(el.dataset.reveal)return;
+el.dataset.reveal="1";
+el.classList.add("reveal");
+el.style.animationDelay=delay+"ms";
+el.addEventListener("animationend",function(e){if(e.target===el&&e.animationName==="riseIn")el.classList.add("done");});
+}
+function bind(){
+var root=document.querySelector("#dc-root")||document;
+if(!root.querySelector(".pg"))return;
+groups.forEach(function(sel){
+root.querySelectorAll(sel).forEach(function(el,i){
+prep(el,Math.min(i,5)*90);
+if(!el.dataset.watching){el.dataset.watching="1";io.observe(el);}
+});
+});
+}
+function watch(){
+bind();
+if(document.body.dataset.anim)return;
+document.body.dataset.anim="1";
+new MutationObserver(bind).observe(document.body,{childList:true,subtree:true});
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",watch);
+else watch();
+})();
+</script>
+</body>
+</html>
